@@ -1,10 +1,12 @@
 package com.company;
 
-class InvalidInputException extends Exception {
-    String message;
-    InvalidInputException(String message) {
+public class InvalidInputException extends Exception {
+    private String message;
+    
+    public InvalidInputException(String message) {
         this.message = message;
     }
+    
     public String getMessage() {
         return message;
     }
